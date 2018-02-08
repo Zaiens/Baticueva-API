@@ -19,3 +19,6 @@
 # IDEs
 .idea
 .vscode
+
+# Config files
+config/database.yml
