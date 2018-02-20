@@ -1,11 +1,10 @@
 class CreateProperties < ActiveRecord::Migration[5.0]
   def change
     create_table :properties do |t|
-
       t.string :address
       t.string :address_number
       t.string :address_department
-      t.string :type
+      t.string :property_type
       t.integer :bath
       t.integer :rooms
       t.integer :parking
@@ -17,7 +16,6 @@ class CreateProperties < ActiveRecord::Migration[5.0]
       t.boolean :cellar
       t.boolean :available
       t.text :description
-
     end
   end
 end
