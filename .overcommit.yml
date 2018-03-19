@@ -6,7 +6,7 @@ PreCommit:
     enabled: true
     problem_on_unmodified_line: ignore
   Reek:
-    enabled: true
+    enabled: false
     problem_on_unmodified_line: ignore
   
   RailsBestPractices:
