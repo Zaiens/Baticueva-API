@@ -5,3 +5,19 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+# Admin User
+User.create(
+  email: 'admin@zaiens.io',
+  NID: '1-9',
+  first_name: 'Admin',
+  last_name: 'istrator',
+  password: '1234567890',
+  password_confirmation: '1234567890',
+
+  type: nil,
+  position_id: nil,
+  phone: nil,
+  gender: 'other',
+  age: 0
+)
