@@ -3,16 +3,16 @@
 class CreateUsers < ActiveRecord::Migration[5.0]
   def change
     create_table :users do |t|
-      t.integer :position_id
+      t.integer :position_id, null: true
 
       t.string :type # Polymorphism for roles
 
       t.string :NID # National identification (RUN, DNI, passport)
       t.string :first_name
       t.string :last_name
-      t.string :phone
+      t.string :phone, null: true
       t.string :gender
-      t.integer :age
+      t.integer :age, null: true
 
       ## Devise
       ## Database authenticatable
